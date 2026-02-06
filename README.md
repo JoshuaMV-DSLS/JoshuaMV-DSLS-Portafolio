@@ -7,6 +7,7 @@ Portafolio personal en información académica y laboral
 UX/UI Design /
 Electronics Engineering /
 
+
 ## Work experience
 FANJOSH @ cursomer service /
 Helvex @ Electronics Laboratorist /
