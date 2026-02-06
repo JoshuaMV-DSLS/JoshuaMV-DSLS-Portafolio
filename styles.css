@@ -62,6 +62,7 @@ body {
 /* Sidebar */
 .sidebar section {
   margin-bottom: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 /* Projects */
