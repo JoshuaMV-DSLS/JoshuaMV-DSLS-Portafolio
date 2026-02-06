@@ -167,3 +167,6 @@ footer {
     text-align: center;
   }
 }
+body {
+  background: red !important;
+}
