@@ -7,18 +7,20 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-photo">
-      <!-- Reemplaza photo.jpg por tu imagen -->
-      <img src="photo.jpg" alt="Foto de Joshua" />
-    </div>
-    <div class="hero-text">
-      <h1>JoshuaMV-DSLS-Portafolio</h1>
-      <h2>UX/UI Designer</h2>
-    </div>
-  </header>
+<header class="hero">
+  <div class="hero-photo">
+    <img src="photo.jpg" alt="Foto de Joshua">
+  </div>
+  <div class="hero-text">
+    <h1>JoshuaMV-DSLS-Portafolio</h1>
+    <h2>UX/UI Designer</h2>
+  </div>
+</header>
 
-  <main class="container">
+<main class="layout">
+
+  <!-- COLUMNA IZQUIERDA -->
+  <aside class="sidebar">
     <section>
       <h3>About</h3>
       <p>Portafolio personal con información académica y experiencia laboral enfocada en diseño UX/UI y sistemas.</p>
@@ -35,40 +37,36 @@
     <section>
       <h3>Work Experience</h3>
       <ul>
-        <li><strong>FANJOSH</strong> — Customer Service</li>
-        <li><strong>Helvex</strong> — Electronics Laboratorist</li>
-        <li><strong>Ravekh</strong> — UI Designer Internship</li>
+        <li>FANJOSH — Customer Service</li>
+        <li>Helvex — Electronics Laboratorist</li>
+        <li>Ravekh — UI Designer Internship</li>
       </ul>
     </section>
+  </aside>
 
-    <section>
-      <h3>Projects</h3>
+  <!-- COLUMNA DERECHA -->
+  <section class="projects">
+    <h3>Projects</h3>
 
-      <article>
-        <h4>UI Design and Analysis <span class="status">Finished</span></h4>
-        <p>Interactive dashboard for data visualization and analysis based on User Stories and Personas.</p>
-        <p class="tech">Figma · FigJam · Desk Research</p>
-      </article>
+    <article class="project-card">
+      <div class="project-image">Image</div>
+      <div class="project-content">
+        <h4>UI Design and Analysis</h4>
+        <p>Interactive dashboard for data visualization and analysis.</p>
+      </div>
+    </article>
 
-      <article>
-        <h4>Prime Video Usability Brief <span class="status">Finished</span></h4>
-        <p>Usability research focused on detecting improvement areas and proposing an enhanced prototype.</p>
-        <p class="tech">Figma · Google Forms · Desk Research</p>
-      </article>
-
-      <article>
-        <h4>Subscription Management <span class="status">Finished</span></h4>
+    <article class="project-card">
+      <div class="project-image">Image</div>
+      <div class="project-content">
+        <h4>Subscription Management</h4>
         <p>Interface proposal for user subscription management systems.</p>
-        <p class="tech">Figma · Figma Make · Systems Design</p>
-      </article>
+      </div>
+    </article>
 
-      <article>
-        <h4>TurnZero <span class="status paused">Paused</span></h4>
-        <p>Narrative-focused tool to improve pacing and roll mechanics for RPG players and masters.</p>
-        <p class="tech">Figma · Excalidraw · Google Forms · Prototyping</p>
-      </article>
-    </section>
-  </main>
+  </section>
+
+</main>
 
   <footer>
     <p>© JoshuaMV — UX/UI Designer</p>
