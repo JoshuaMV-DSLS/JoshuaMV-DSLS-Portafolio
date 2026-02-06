@@ -167,3 +167,19 @@ footer {
     text-align: center;
   }
 }
+
+.layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-image {
+  background: #333;
+  min-height: 200px;
+}
