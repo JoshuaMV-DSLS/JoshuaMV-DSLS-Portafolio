@@ -68,14 +68,14 @@ body {
 /* Projects */
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   margin-bottom: 2rem;
   border-radius: 16px;
   overflow: hidden;
   
 }
 .project-card {
-background: linear-gradient(135deg, #171a21, #1e2330)
+background: linear-gradient(133deg, #232f49, #1e2330)
 }
 
 .project-image {
