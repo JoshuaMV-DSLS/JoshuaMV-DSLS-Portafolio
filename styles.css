@@ -51,7 +51,7 @@ body {
 
 /* LAYOUT 2 COLUMNAS */
 .layout {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 1rem;
   padding: 2rem;
   display: grid;
