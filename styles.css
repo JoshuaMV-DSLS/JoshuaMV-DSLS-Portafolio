@@ -72,7 +72,10 @@ body {
   margin-bottom: 2rem;
   border-radius: 16px;
   overflow: hidden;
-  background: linear-gradient(135deg, #171a21, #1e2330)
+  
+}
+.project-card {
+background: linear-gradient(135deg, #171a21, #1e2330)
 }
 
 .project-image {
