@@ -55,59 +55,31 @@ body {
   margin: 0 auto;
   padding: 2rem;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: 3rem;
 }
 
-/* SIDEBAR */
-.sidebar {
-  position: relative;
-}
-
-.sidebar-section {
+/* Sidebar */
+.sidebar section {
   margin-bottom: 2.5rem;
 }
 
-.sidebar h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  border-bottom: 1px solid #2a2f3a;
-  padding-bottom: 0.4rem;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  color: var(--muted);
-  margin-bottom: 0.5rem;
-}
-
-/* PROJECTS */
-.projects h3 {
-  margin-bottom: 2rem;
-}
-
+/* Projects */
 .project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: var(--surface);
-  border-radius: 18px;
-  overflow: hidden;
   margin-bottom: 2rem;
-  border: 1px solid #222733;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .project-image {
-  background: linear-gradient(135deg, #0c0e13, #1b1f2a);
+  background: #333;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--muted);
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
+  color: #aaa;
 }
 
 .project-content {
