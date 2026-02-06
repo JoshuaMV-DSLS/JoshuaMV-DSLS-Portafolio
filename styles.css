@@ -52,7 +52,7 @@ body {
 /* LAYOUT 2 COLUMNAS */
 .layout {
   max-width: 1200px;
-  margin: 0;
+  margin: 1rem;
   padding: 2rem;
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -144,7 +144,7 @@ footer {
 .layout {
   display: grid;
   grid-template-columns: 300px 1fr;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .project-card {
