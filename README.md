@@ -1,5 +1,6 @@
 # JoshuaMV-DSLS-Portafolio
-Portafolio personal en información académica y laboral
+This is my Persoanl portafolio Academic and Profesional experience
+Hello, I'm Joshua Maya Valencia, bilingual junior UX/UI designer with knowledge of Figma, FigJam, Maze, Notion, HTML, CSS, pragmatic with a background in Electronic Engineering.
 
 # UX/UI Designer
 
@@ -39,3 +40,9 @@ Figma / Figma Make / Systems Design
 TurnZero a tool that propose to reduce the pacing and expand the Roll for Masters and player all types focusing on the narrative
 #### Technologies and knowledge:
 Figma / Excalidraw / Google Forms/ Systems Design / Prototyping
+
+### Tramit Booking System [Finished]
+#### Description: 
+Interface proposal corresponding to a shift system for a paperwork office through the use of Figma and component development
+#### Technologies and knowledge:
+Figma / Desk Research / Systems Design
