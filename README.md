@@ -14,6 +14,7 @@ FANJOSH @ cursomer service /
 Helvex @ Electronics Laboratorist /
 Ravekh @ UI Designer intership
 
+***
 
 # **Projects**
 
