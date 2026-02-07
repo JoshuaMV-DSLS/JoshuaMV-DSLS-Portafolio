@@ -68,7 +68,7 @@ body {
 /* Projects */
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   margin-bottom: 2rem;
   border-radius: 16px;
   overflow: hidden;
