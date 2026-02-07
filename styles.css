@@ -24,7 +24,7 @@ body {
 /* HERO */
 .hero {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
   padding: 3rem 4rem;
   background: linear-gradient(180deg, #0f1115, #171a21);
