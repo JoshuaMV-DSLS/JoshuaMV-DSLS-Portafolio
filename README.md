@@ -4,12 +4,12 @@ Hello, I'm Joshua Maya Valencia, bilingual junior UX/UI designer with knowledge 
 
 # UX/UI Designer
 
-## Education
+**Education**
 UX/UI Design /
 Electronics Engineering /
 
 
-## Work experience
+**Work experience**
 FANJOSH @ cursomer service /
 Helvex @ Electronics Laboratorist /
 Ravekh @ UI Designer intership
