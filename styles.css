@@ -66,12 +66,6 @@ body {
 }
 
 /* Projects */
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
 .project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -135,6 +129,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
   .project-card {
     grid-template-columns: 1fr;
   }
