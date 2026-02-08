@@ -78,13 +78,11 @@ body {
 background: linear-gradient(133deg, #232f49, #1e2330)
 }
 
-.project-image {
-  background: #333;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #aaa;
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .project-content {
