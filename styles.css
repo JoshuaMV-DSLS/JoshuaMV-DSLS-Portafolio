@@ -129,11 +129,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .projects {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
   .project-card {
     grid-template-columns: 1fr;
   }
@@ -164,4 +159,10 @@ footer {
 .project-image {
   background: #333;
   min-height: 200px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
