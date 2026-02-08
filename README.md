@@ -22,9 +22,11 @@ Ravekh @ UI Designer intership
 
 <details>
 ##<summary>UI design and analysis [Finished] </summary>
-**Description:** 
+Description:
+***
 Creation of an interactive dashboard for visualization and data analysis for the application. It allows you to analyze User Stories based on a synthesis of User personas, analyzing their patterns and path to follow for the application design
-### Technologies and knowledge:
+***
+Technologies and knowledge:
 Figma / FigJam / Desk Research
 </details>
 
