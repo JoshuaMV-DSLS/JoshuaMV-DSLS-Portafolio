@@ -22,6 +22,8 @@ Ravekh @ UI Designer intership
 
 <details>
 <summary>UI design and analysis [Finished] </summary>
+
+***
   
 **Description:**
 
