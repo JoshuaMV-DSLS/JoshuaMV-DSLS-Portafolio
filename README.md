@@ -1,5 +1,4 @@
 # JoshuaMV-DSLS-Portafolio
-## UX/UI Designer
 
 ![1768695736247](https://github.com/user-attachments/assets/105883e5-5a48-4963-b123-c259b80338d2)
 
