@@ -51,24 +51,45 @@ Figma / Google Frorms / Desk Research
 
 ***
 
-## Subscription management [Finished]
-**Description:** 
+<details>
+<summary>Subscription management [Finished]</summary>
+
+***
+
+## Description: 
 Proposal for an interface for the user subscription management application and their management
+
 ### Technologies and knowledge:
 Figma / Figma Make / Systems Design
 
+</details> 
+
 ***
 
-## TurnZero [Paused]
-**Description:** 
+<details>
+<summary>TurnZero [Paused]</summary>
+
+***
+
+## Description: 
 TurnZero a tool that propose to reduce the pacing and expand the Roll for Masters and player all types focusing on the narrative
+
 ### Technologies and knowledge:
 Figma / Excalidraw / Google Forms/ Systems Design / Prototyping
 
+</details>
+
 ***
 
-## Tramit Booking System [Finished]
-**Description:** 
+<details>
+<summary>Tramit Booking System [Finished]</summary>
+
+***
+
+## Description:
 Interface proposal corresponding to a shift system for a paperwork office through the use of Figma and component development
+
 ### Technologies and knowledge:
 Figma / Desk Research / Systems Design
+
+</details>
