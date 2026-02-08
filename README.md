@@ -25,7 +25,7 @@ Ravekh @ UI Designer intership
 
 ***
   
-**Description:**
+## Description:
 
 Creation of an interactive dashboard for visualization and data analysis for the application. It allows you to analyze User Stories based on a synthesis of User personas, analyzing their patterns and path to follow for the application design
 
@@ -36,11 +36,18 @@ Figma / FigJam / Desk Research
 
 ***
 
-## Prime Video Usability brief [Finished]
-**Description:**
+<details>
+<summary>Prime Video Usability brief [Finished]</summary>
+
+***
+
+## Description:
 Research brief, usability of Prime Video with the aim of finding cases of improvement and interface problems through User research and subsequently proposing a prototype with improvements based on the results
+
 ### Technologies and knowledge:
 Figma / Google Frorms / Desk Research
+
+</details> 
 
 ***
 
