@@ -44,9 +44,9 @@ Ravekh is a local company of TI services, their main services are the develpment
   
 </details>
 
-***
-
 </details>
+
+***
 
 <details>
 <summary>UI design and analysis [Finished] </summary>
