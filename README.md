@@ -6,6 +6,8 @@
 This is my Persoanl portafolio Academic and Profesional experience
 Hello, I'm Joshua Maya Valencia, bilingual junior UX/UI designer with knowledge of Figma, FigJam, Maze, Notion, HTML, CSS, pragmatic with a background in Electronic Engineering.
 
+[Visual protafolio](https://joshuamv-dsls.github.io/JoshuaMV-DSLS-Portafolio/)
+
 **Education:**
 UX/UI Design /
 Electronics Engineering /
