@@ -40,7 +40,7 @@ Figma / HTML / CSS / Desk Research
 ## Ravekh catalogue
 Ravekh is a local company of TI services, their main services are the develpment of pages from landing pages to online stores for third party companies, however they run a rental service of a catalogue which consist about a space to make easier the management of inventories and selling to third party customers saving time to reply and deal with the products showing them online instead.
 
-# Characteristics
+## Characteristics
   
 </details>
 
