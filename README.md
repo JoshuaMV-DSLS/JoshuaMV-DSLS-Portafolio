@@ -3,7 +3,7 @@
 ![1768695736247](https://github.com/user-attachments/assets/105883e5-5a48-4963-b123-c259b80338d2)
 
 
-This is my Persoanl portafolio Academic and Profesional experience
+This is my Persoanl portfolio Academic and Profesional experience
 Hello, I'm Joshua Maya Valencia, bilingual junior UX/UI designer with knowledge of Figma, FigJam, Maze, Notion, HTML, CSS, pragmatic with a background in Electronic Engineering.
 
 [Visual protafolio](https://joshuamv-dsls.github.io/JoshuaMV-DSLS-Portafolio/)
