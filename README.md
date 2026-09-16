@@ -50,16 +50,16 @@ Ravekh is a local company of TI services, their main services are the develpment
 
 ***
 <details>
-<summary>UI design and analysis [Finished] </summary>
+<summary>Prototype (MVP) Screws and Tools provider [Finished] </summary>
 
 ***
   
 ## Description:
 
-Creation of an interactive dashboard for visualization and data analysis for the application. It allows you to analyze User Stories based on a synthesis of User personas, analyzing their patterns and path to follow for the application design
+Creation of an interactive prototype of a landing page for a Screws and Toold provider with distribution along the estate, based on the needs and branding provided by the customer
 
 **Technologies and knowledge:**
-Figma / FigJam / Desk Research
+Figma / FigaMake / Desk Research
 
 </details>
 
