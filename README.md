@@ -23,7 +23,7 @@ Ravekh @ UI Designer intership
 # **Projects**
 
 <details>
-<summary>Ravekh Landing ctalogue [On course] </summary>
+<summary>Ravekh Landing ctalogue [On going] </summary>
 
 ***
   
@@ -47,6 +47,23 @@ Ravekh is a local company of TI services, their main services are the develpment
 </details>
 
 </details>
+
+***
+
+<details>
+<summary>RavekhPOS APP [Online] </summary>
+
+***
+  
+## Description:
+
+Creation of design and Interface for the Ravekh ecosystem initially and released with the name of RavekhPOS, a system which main feature is a digital catalogue icorporated in a point of sale system not only alowing to administrate the products and generate tickets if not as a mini version of an e-commerse and a fidelity system for customers as addon keeping the sale, control and rewards in the same place.
+
+**Technologies and knowledge:**
+Figma / FigaJam / Desk Research / System Design / AI asistance
+
+</details>
+
 
 ***
 <details>
