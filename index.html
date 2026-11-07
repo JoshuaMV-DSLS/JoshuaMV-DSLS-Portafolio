@@ -7,408 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-dark: #0b0f19;
-      --card-bg: #131926;
-      --card-border: rgba(255, 255, 255, 0.08);
-      --card-hover-border: rgba(99, 102, 241, 0.4);
-      --accent-blue: #38bdf8;
-      --accent-indigo: #818cf8;
-      --text-main: #f0f6fc;
-      --text-muted: #94a3b8;
-      --badge-bg: rgba(255, 255, 255, 0.06);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg-dark);
-      background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
-                        radial-gradient(at 100% 100%, rgba(56, 189, 248, 0.08) 0px, transparent 50%);
-      background-attachment: fixed;
-      color: var(--text-main);
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      line-height: 1.6;
-      padding: 40px 20px;
-    }
-
-    /* HERO HEADER */
-    .hero {
-      max-width: 1200px;
-      margin: 0 auto 40px auto;
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--card-border);
-    }
-
-    .hero-photo img {
-      width: 88px;
-      height: 88px;
-      border-radius: 20px;
-      object-fit: cover;
-      border: 2px solid var(--accent-indigo);
-      box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
-    }
-
-    .hero-text h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, #ffffff 0%, var(--accent-indigo) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-text h2 {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
-
-    /* MAIN TWO-COLUMN LAYOUT */
-    .layout {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 40px;
-    }
-
-    /* SIDEBAR */
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-
-    .sidebar section h3 {
-      font-size: 1.1rem;
-      color: var(--accent-blue);
-      margin-bottom: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .sidebar section p, .sidebar section ul {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
-    .sidebar section ul {
-      list-style-type: none;
-    }
-
-    .sidebar section ul li {
-      margin-bottom: 8px;
-      position: relative;
-      padding-left: 16px;
-    }
-
-    .sidebar section ul li::before {
-      content: "•";
-      color: var(--accent-indigo);
-      position: absolute;
-      left: 0;
-      font-weight: bold;
-    }
-
-    /* FEATURED PROJECTS SECTION */
-    .projects-header {
-      font-size: 1.5rem;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .projects-header span {
-      font-size: 0.85rem;
-      background: var(--badge-bg);
-      border: 1px solid var(--card-border);
-      padding: 2px 10px;
-      border-radius: 12px;
-      color: var(--accent-blue);
-    }
-
-    .featured-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-
-    /* FEATURED CARD STYLING */
-    .project-card {
-      background-color: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 16px;
-      overflow: hidden;
-      transition: all 0.25s ease;
-      box-shadow: 0 10px 30px -15px rgba(0,0,0,0.5);
-    }
-
-    .project-card:hover {
-      border-color: var(--card-hover-border);
-      transform: translateY(-2px);
-    }
-
-    .card-main {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-    }
-
-    .project-image {
-      position: relative;
-      overflow: hidden;
-      background: #000;
-    }
-
-    .project-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover .project-image img {
-      transform: scale(1.03);
-    }
-
-    .project-content {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .project-content h4 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    .project-description {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 16px;
-    }
-
-    /* ACTION BAR & DRAWER TOGGLE BUTTON */
-    .card-actions {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-    }
-
-    .project-link {
-      color: var(--accent-blue);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.2s ease;
-    }
-
-    .project-link:hover {
-      color: #93c5fd;
-      text-decoration: underline;
-    }
-
-    .btn-toggle-drawer {
-      background: rgba(99, 102, 241, 0.15);
-      color: var(--accent-indigo);
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      padding: 6px 14px;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s ease;
-    }
-
-    .btn-toggle-drawer:hover {
-      background: rgba(99, 102, 241, 0.3);
-      color: #fff;
-    }
-
-    /* TECH PILLS */
-    .tech-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .tech-pill {
-      background-color: var(--badge-bg);
-      color: var(--text-muted);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      font-weight: 500;
-    }
-
-    /* EXPANDABLE CASE STUDY DRAWER */
-    .case-study-drawer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease-in-out, padding 0.3s ease;
-      background: rgba(11, 15, 25, 0.6);
-      border-top: 1px solid transparent;
-      padding: 0 24px;
-    }
-
-    .case-study-drawer.open {
-      max-height: 400px;
-      padding: 24px;
-      border-top-color: var(--card-border);
-    }
-
-    .drawer-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .drawer-block h5 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 6px;
-    }
-
-    .drawer-block.problem h5 { color: #f87171; }
-    .drawer-block.action h5 { color: var(--accent-blue); }
-    .drawer-block.outcome h5 { color: #34d399; }
-
-    .drawer-block p {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-    }
-
-    /* SECONDARY CAROUSEL SECTION */
-    .carousel-section {
-      max-width: 1200px;
-      margin: 60px auto 0 auto;
-      padding-top: 40px;
-      border-top: 1px solid var(--card-border);
-    }
-
-    .carousel-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .carousel-controls {
-      display: flex;
-      gap: 10px;
-    }
-
-    .carousel-btn {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      color: var(--text-main);
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-    }
-
-    .carousel-btn:hover {
-      border-color: var(--accent-blue);
-      color: var(--accent-blue);
-    }
-
-    .carousel-container {
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding-bottom: 16px;
-      scrollbar-width: thin;
-      scrollbar-color: var(--accent-indigo) var(--bg-dark);
-    }
-
-    .carousel-card {
-      min-width: 300px;
-      max-width: 320px;
-      background-color: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 12px;
-      overflow: hidden;
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      transition: all 0.25s ease;
-    }
-
-    .carousel-card:hover {
-      border-color: var(--card-hover-border);
-      transform: translateY(-4px);
-    }
-
-    .carousel-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    .carousel-card-body {
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-grow: 1;
-    }
-
-    .carousel-card-body h4 {
-      font-size: 1.05rem;
-      margin-bottom: 8px;
-      color: #fff;
-    }
-
-    .carousel-card-body p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-    }
-
-    footer {
-      max-width: 1200px;
-      margin: 40px auto 0 auto;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-
-    @media (max-width: 900px) {
-      .layout { grid-template-columns: 1fr; }
-      .card-main { grid-template-columns: 1fr; }
-      .drawer-grid { grid-template-columns: 1fr; }
-      .project-image { height: 220px; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -492,4 +91,232 @@
             <div class="drawer-grid">
               <div class="drawer-block problem">
                 <h5>The Problem</h5>
-                <p>RPG players and masters
+                <p>RPG players and masters struggled with live session pacing and app fatigue, causing high cognitive friction during combat rolls.</p>
+              </div>
+              <div class="drawer-block action">
+                <h5>The Data & Action</h5>
+                <p>Conducted end-to-end user research and usability surveys. Mapped ergonomic user flows in FigJam and prototyped custom turn trackers.</p>
+              </div>
+              <div class="drawer-block outcome">
+                <h5>The Outcome</h5>
+                <p>Delivered an intuitive, low-stress UI that reduced in-game tool navigation time and enhanced player story immersion.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FEATURED 2: Ravekh Landing Catalogue -->
+        <article class="project-card">
+          <div class="card-main">
+            <div class="project-image">
+              <img src="images/ravekh-landing-catalogue.png" alt="Ravekh Landing Catalogue Preview">
+            </div>
+            <div class="project-content">
+              <div>
+                <h4>Ravekh Landing catalogue</h4>
+                <p class="project-description">Creation of an interactive landing page showcasing product characteristics, customer testimonials, and brand identity aligned with marketing targets.</p>
+              </div>
+              <div>
+                <div class="card-actions">
+                  <a href="https://www.figma.com/design/0CpJssBZvhGnzBC4yB08XB/Landing-Page-CD?node-id=0-1&t=EpsytsuwVGs38AYM-1" target="_blank" class="project-link">
+                    Link to the project &rarr;
+                  </a>
+                  <button class="btn-toggle-drawer" onclick="toggleDrawer('drawer-2', this)">
+                    <span>Read Case Study</span> &#9660;
+                  </button>
+                </div>
+                <div class="tech-pills">
+                  <span class="tech-pill">Figma</span>
+                  <span class="tech-pill">Excalidraw</span>
+                  <span class="tech-pill">HTML</span>
+                  <span class="tech-pill">CSS</span>
+                  <span class="tech-pill">Desk Research</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- EXPANDABLE DRAWER -->
+          <div id="drawer-2" class="case-study-drawer">
+            <div class="drawer-grid">
+              <div class="drawer-block problem">
+                <h5>The Problem</h5>
+                <p>Initial client drop-off was high due to cluttered visual hierarchy and unclear product value communication on mobile browsers.</p>
+              </div>
+              <div class="drawer-block action">
+                <h5>The Data & Action</h5>
+                <p>Analyzed visitor bounce metrics with the marketing team. Restructured visual layout and CTA placements for responsive web standards.</p>
+              </div>
+              <div class="drawer-block outcome">
+                <h5>The Outcome</h5>
+                <p>Increased overall landing page conversion rate by 10% and improved brand trust through clear customer social proof layout.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FEATURED 3: RavekhPOS APP [Online] -->
+        <article class="project-card">
+          <div class="card-main">
+            <div class="project-image">
+              <img src="images/RavekhSysPOS.png" alt="RavekhPOS System Preview">
+            </div>
+            <div class="project-content">
+              <div>
+                <h4>RavekhPOS APP [Online]</h4>
+                <p class="project-description">Point-of-sale ecosystem incorporating a digital catalog, ticket generation, mini e-commerce functionality, and customer loyalty management in one place.</p>
+              </div>
+              <div>
+                <div class="card-actions">
+                  <a href="https://play.google.com/store/apps/details?id=com.catalogoravekh" target="_blank" class="project-link">
+                    Link to the project &rarr;
+                  </a>
+                  <button class="btn-toggle-drawer" onclick="toggleDrawer('drawer-3', this)">
+                    <span>Read Case Study</span> &#9660;
+                  </button>
+                </div>
+                <div class="tech-pills">
+                  <span class="tech-pill">Figma</span>
+                  <span class="tech-pill">Sketch</span>
+                  <span class="tech-pill">Desk Research</span>
+                  <span class="tech-pill">System Design</span>
+                  <span class="tech-pill">AI Assistance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- EXPANDABLE DRAWER -->
+          <div id="drawer-3" class="case-study-drawer">
+            <div class="drawer-grid">
+              <div class="drawer-block problem">
+                <h5>The Problem</h5>
+                <p>Small retail merchants struggled with switching between separate POS inventory tools and customer reward hardware.</p>
+              </div>
+              <div class="drawer-block action">
+                <h5>The Data & Action</h5>
+                <p>Engineered an integrated system architecture unifying sales transactions, ticket exports, and customer fidelity programs into one screen.</p>
+              </div>
+              <div class="drawer-block outcome">
+                <h5>The Outcome</h5>
+                <p>Successfully launched live on Google Play, providing merchants with a seamless hybrid catalog and sales administration app.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SECONDARY PROJECTS HORIZONTAL CAROUSEL -->
+  <section class="carousel-section">
+    <div class="carousel-header">
+      <h3 class="carousel-title">More Projects</h3>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="scrollCarousel(-320)">&larr;</button>
+        <button class="carousel-btn" onclick="scrollCarousel(320)">&rarr;</button>
+      </div>
+    </div>
+
+    <div class="carousel-container" id="carousel">
+      
+      <!-- MINOR 1 -->
+      <article class="carousel-card">
+        <img src="images/screwsandtools.png" alt="Screws and Tools Landing">
+        <div class="carousel-card-body">
+          <div>
+            <h4>Screws and Tools provider landing (MVP)</h4>
+            <p>Developed a product proposal for a provider of screws and tools keeping structure and updating the visuals and products using sketches, mockups, and branding to create a preview for the customer.</p>
+          </div>
+          <div>
+            <div class="tech-pills">
+              <span class="tech-pill">FigmaMake</span>
+              <span class="tech-pill">Sketch</span>
+              <span class="tech-pill">Desk Research</span>
+            </div>
+            <a href="https://www.figma.com/make/rjId5VAWNZwxSI1BTIOauD/Landing-page-for-screws-provider?fullscreen=1&t=kADLVF1pnFqg5LyQ-1&code-node-id=0-9" target="_blank" class="project-link">
+              Link to the project &rarr;
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MINOR 2 -->
+      <article class="carousel-card">
+        <img src="images/usability-pv.jpg" alt="Prime Video Usability Brief">
+        <div class="carousel-card-body">
+          <div>
+            <h4>Prime Video usability brief</h4>
+            <p>Research brief, usability of Prime Video with the aim of finding cases of improvement and interface problems through User research and subsequently proposing a prototype with improvements based on the results and due to the leaving rate of 46%.</p>
+          </div>
+          <div>
+            <div class="tech-pills">
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">Google docs</span>
+              <span class="tech-pill">Desk Research</span>
+            </div>
+            <a href="https://www.figma.com/deck/JoUSmUKw3qersz4rdKUPaW" target="_blank" class="project-link">
+              Link to the project &rarr;
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MINOR 3 -->
+      <article class="carousel-card">
+        <img src="images/BannerRvkIdeas.png" alt="Banners Projects Rvk">
+        <div class="carousel-card-body">
+          <div>
+            <h4>Banner Projects</h4>
+            <p>Branding Identity assets and banners creation for promotion, customers engagement and story telling campaings.</p>
+          </div>
+          <div>
+            <div class="tech-pills">
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">Marketing</span>
+              <span class="tech-pill">User research</span>
+            </div>
+            <a href="https://www.figma.com/design/tnJfY8JCJJTpuXb2myLJLm/Baner-projects?node-id=0-1&t=L1MkoMj9MjZz5y3c-1" target="_blank" class="project-link">
+              Link to the project &rarr;
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MINOR 4 -->
+      <article class="carousel-card">
+        <img src="images/tamitbknsys.jpg" alt="Tramit Booking System">
+        <div class="carousel-card-body">
+          <div>
+            <h4>Tramit Booking System</h4>
+            <p>Interface proposal corresponding to a shift system for a paperwork office through the use of Figma and component development.</p>
+          </div>
+          <div>
+            <div class="tech-pills">
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">Systems Design</span>
+              <span class="tech-pill">Desk Research</span>
+            </div>
+            <a href="https://www.figma.com/design/M0ffM8HT52by50qLRc1oq9/Proyecto-8_Joshua-Maya?node-id=1-2&t=Qj3yV7yl0MYF3sZo-1" target="_blank" class="project-link">
+              Link to the project &rarr;
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MINOR 5 -->
+      <article class="carousel-card">
+        <img src="images/uidesign-analyisis.jpg" alt="UI Design and Analysis">
+        <div class="carousel-card-body">
+          <div>
+            <h4>UI Design and Analysis</h4>
+            <p>Interactive dashboard for data visualization and analysis.</p>
+          </div>
+          <div>
+            <div class="tech-pills">
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">FigJam</span>
+              <span class="tech-pill">Desk Research</span>
+            </div>
+            <a href="https://www.figma.com/board/czB03i1AkIttosEEbyJlst/Proyecto-4_Joshua-Maya--Sprint-4?node-id=0-1&t=Qj3yV7yl0MYF3sZo-1" target="_blank" class="project-link">
+              Link to the project &rarr;
