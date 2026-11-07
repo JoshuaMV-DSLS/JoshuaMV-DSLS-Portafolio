@@ -30,7 +30,7 @@ body {
 /* HERO HEADER */
 .hero {
   max-width: 1200px;
-  margin: 20px 40 40px 40;
+  margin: 20px 100 40px 100;
   display: fill;
   align-items: center;
   gap: 24px;
