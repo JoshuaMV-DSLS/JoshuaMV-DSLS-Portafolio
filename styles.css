@@ -32,8 +32,8 @@ body {
   max-width: 1980px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
   display: fill;
   align-items: center;
   gap: 24px;
@@ -67,7 +67,7 @@ body {
 /* MAIN TWO-COLUMN LAYOUT */
 .layout {
   max-width: 1980px;
-  margin: 0 auto;
+  margin: 80 auto;
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 40px;
