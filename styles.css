@@ -34,7 +34,7 @@ body {
   margin-bottom: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  display: fit;
+  display: fill;
   align-items: center;
   gap: 24px;
   padding-bottom: 24px;
